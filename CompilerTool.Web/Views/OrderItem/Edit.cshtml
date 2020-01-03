@@ -1,0 +1,59 @@
+@using CompilerTool.Web.HtmlExtensions
+@model CompilerTool.Web.Models.OrderItemModel
+
+@{
+    ViewBag.Title = "Edit";
+    Layout  = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="m_title_box">
+    <ol>
+        <li data-id="OrderItem">
+            <a href="#">OrderItem</a><i class="icon-arrowright"></i>
+        </li>
+        <li data-id="Edit">Edit</li>
+    </ol>
+</div>
+<div class="panel panel-default">
+    <div class="panel-body">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.OwnerId)
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="Name"  class="col-md-4 from-title" >Name</label>
+						<div class="col-md-8 from-cont">
+							@Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+							@Html.ValidationMessageFor(model => model.Name)
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="Description"  class="col-md-4 from-title" >Description</label>
+						<div class="col-md-8 from-cont">
+							@Html.TextBoxFor(model => model.Description, new { @class = "form-control" })
+							@Html.ValidationMessageFor(model => model.Description)
+						</div>
+					</div>
+				</div>
+			</div>            <div class="width_10 text-center m_left">
+                <input class="m_btn m_back" type="submit" value="Save" />
+                @Html.ActionLink("Cancel", "Index", null, new {@class="m_btn m_back"})
+            </div>
+        }
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        $(document)
+            .ready(function() {
+        });
+    </script>
+}
+

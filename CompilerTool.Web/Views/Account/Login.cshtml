@@ -1,0 +1,56 @@
+@model SSO.Utilities.LoginModelBase
+@{
+    this.ViewBag.Title = "Log In";
+    this.Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@(this.ViewBag.Title)</title>
+        <link href="@Url.Content("~/Content/reset.css")" rel="stylesheet"  type="text/css"/>
+        <link href="@Url.Content("~/Content/login_register.css")" rel="stylesheet"  type="text/css"/>
+        <script src="@(this.Url.Content("~/Scripts/jquery-3.3.1.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery-ui-1.12.1/jquery-ui.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery.validate.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js"))" > </script>
+    </head>
+    <body style="background: url('@(this.Url.Content("~/Content/Images/background.png"))') no-repeat center center;">
+        <div class="header">
+            <h1>
+                <img src="@(this.Url.Content("~/Content/Images/companyLogo.png"))"/>
+                <b></b>
+            </h1>
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="section">
+                    @using (Html.BeginForm("LoginByUserName", "Account", FormMethod.Post))
+                    {  
+                        <h3>LOG IN</h3>
+                        @Html.ValidationSummary(true, "",new{@class="tip"})
+                        <ul>
+
+                            <li>
+                                <img src="@(this.Url.Content("~/Content/Images/account.png"))"/>
+                                @Html.TextBoxFor(model => model.AccountName,new{placeholder="User Name"})
+                                @Html.HiddenFor(model => model.OrigUrl)
+                            </li>
+                            <li>
+                                <img src="@(this.Url.Content("~/Content/Images/password.png"))"/>
+                                @Html.PasswordFor(model => model.Password,new{placeholder="Password"})
+                            </li>
+                        </ul>
+                       
+                        <input class="submit" type="submit" value="Log In"/>
+                        <p class="register">
+                            <a href="@(this.Url.Action("Register", "Account", new { redirectUrl = this.Model.OrigUrl}))">Immediately go to sign up !</a>
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy;2018 Metashare inc.all rlghts reserved.</div>
+    </body>
+
+</html>

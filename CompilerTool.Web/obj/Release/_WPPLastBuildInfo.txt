@@ -1,0 +1,4 @@
+PlatformName=AnyCPU
+Configuration=Release
+WPPAllFilesInSingleFolder=D:\MDA\MDDPlatformWeb\code\Olivia_B2WxXE\CompilerTool\CompilerTool.Web\obj\Release\Package\PackageTmp
+WebPublishProfileFile=

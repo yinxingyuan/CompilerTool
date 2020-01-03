@@ -1,0 +1,33 @@
+@using MetaShare.Common.Core.Presentation
+@using CompilerTool.Entities
+@using CompilerTool.Web.HtmlExtensions
+@using CompilerTool.Web.Models
+
+@model IndexViewModel<CompilerTool.Entities.OrderItem>
+@{
+    ViewBag.Title = "Index";
+    Layout  = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="m_title_box">
+    <ol>
+        <li data-id="OrderItem">
+            <a href="#">OrderItem</a><i class="icon-arrowright"></i>
+        </li>
+        <li data-id="Index">Index</li>
+    </ol>
+    <div class="m_title_action">
+        <a class="m_btn" href="@(this.Url.Action("Create", "OrderItem", null))">New</a>
+    </div>
+</div>
+<div class="panel panel-default">
+    
+    <div class="panel-heading">OrderItem</div>
+    <div class="panel-body">
+            @Html.Partial(Url.Content("_Search"), Model.SearchModel)
+    <div class="table-responsive" id="OrderItem_DataList">
+            @Html.Partial(Url.Content("_DataList"), Model)
+    </div>
+    </div>
+</div>
+@this.Html.Partial("_DeleteDialog")

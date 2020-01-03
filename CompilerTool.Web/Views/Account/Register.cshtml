@@ -1,0 +1,61 @@
+@model SSO.Utilities.RegisterModelBase
+
+@{
+    ViewBag.Title = "Sign Up";
+    this.Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>@ViewBag.Title</title>
+        <link href="@Url.Content("~/Content/reset.css")" rel="stylesheet"  type="text/css"/>
+        <link href="@Url.Content("~/Content/login_register.css")" rel="stylesheet"  type="text/css"/>
+        <script src="@(this.Url.Content("~/Scripts/jquery-3.3.1.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery-ui-1.12.1/jquery-ui.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery.validate.min.js"))" > </script>
+        <script src="@(this.Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js"))" > </script>
+    </head>
+    <body style="background: url('@(this.Url.Content("~/Content/Images/background.png"))') no-repeat center center;">
+        <div class="header">
+            <h1>
+                <img src="@(this.Url.Content("~/Content/Images/companyLogo.png"))"/>
+                <b>Metashare</b>
+            </h1>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="section">
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                    {
+                        <h3>SIGN UP</h3>
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true)
+                        @Html.HiddenFor(m =>m.OrigUrl)
+                        <ul>
+                            <li>
+                                <img src="@(this.Url.Content("~/Content/Images/account.png"))"/>
+                                @Html.TextBoxFor(model => model.UserName,new{placeholder="User Name"})
+                                @Html.ValidationMessageFor(model => model.UserName)
+                            </li>
+                            <li>
+                                <img src="@(this.Url.Content("~/Content/Images/password.png"))"/>
+                                @Html.PasswordFor(model => model.Password,new{placeholder="Password"})
+                                @Html.ValidationMessageFor(model => model.Password)
+                            </li>
+                            <li>
+                                <img src="@(this.Url.Content("~/Content/Images/password.png"))"/>
+                                @Html.PasswordFor(model => model.ConfirmPassword,new{placeholder="Confirm Password"})
+                                @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                            </li>
+                        </ul>
+                        <input class="submit" type="submit" value="Sign Up"/>
+                        <p class="register">
+                            <a href="@(this.Url.Action("Login", "Account", new {redirectUrl = this.Model.OrigUrl}))">Immediately go to log in !</a>
+                        </p>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy;2018 Metashare inc.all rlghts reserved.</div>
+    </body>
+</html>

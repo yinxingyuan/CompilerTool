@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+
+/*------- css pagination  Start---------*/
+
+.togoperpage {
+    color: #337AB7;
+    display: inline-block;
+    float: right;
+    margin: 20px 0 20px 20px;
+}
+
+.togoperpage .go_to_page {
+    display: inline-block;
+    float: left;
+    margin: 0 6px;
+}
+
+.togoperpage .go_to_page input, .togoperpage .go_to_page .go {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    line-height: 28px;
+    margin: 1px 5px;
+    text-align: center;
+    width: 50px;
+}
+
+.togoperpage .go_to_page input:last-child, .togoperpage .go_to_page .go { width: 36px; }
+
+.togoperpage .go_to_page input:last-child:hover, .togoperpage .go_to_page .go:hover {
+    background-color: #337AB7;
+    color: #fff;
+}
+
+.togoperpage .per_page { display: inline-block; }
+
+.togoperpage .per_page select {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    height: 32px;
+    margin: 1px 5px;
+    width: 50px;
+}
+
+.togoperpage .go_to_page .go {
+    background-color: #ddd;
+    display: inline-block;
+}
+
+/*------- css pagination  End---------*/
+
+/*------- css table  Start---------*/
+
+.table {
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+th { text-align: center; }
+
+.table tr {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 40px;
+}
+
+.table thead tr { border-top: 1px solid #e5e5e5; }
+
+.table thead tr th:nth-child(odd) {
+    background-color: #DBE2E9;
+    font-weight: bold;
+}
+
+.table thead tr th:nth-child(even) {
+    background-color: #E6EBF0;
+    font-weight: bold;
+}
+
+.table tr > th:last-child, .table tr > td:last-child { border-right: 1px solid #e5e5e5; }
+
+.table tr > th, .table tr > td {
+    border-left: 1px solid #e5e5e5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: keep-all;
+}
+
+/*------- css table  End---------*/
+
+
+/*------- css picture  Start---------*/
+
+.table .m_details, .table .m_edit, .table .m_delete, .table .m_history {
+    display: inline-block;
+    height: 18px;
+    margin: 0 6px;
+    width: 18px;
+}
+
+
+.m_details {
+    background: url('Images/detail-n.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_history {
+    background: url('Images/history-n.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_edit {
+    background: url('Images/edit-n.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_delete {
+    background: url('Images/delete-n.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_details:hover {
+    background: url('Images/detail-h.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_history:hover {
+    background: url('Images/history-h.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_edit:hover {
+    background: url('Images/edit-h.png') no-repeat center center;
+    background-size: contain;
+}
+
+.m_delete:hover {
+    background: url('Images/delete-h.png') no-repeat center center;
+    background-size: contain;
+}
+
+/*------- css picture  End---------*/
+
+/*------- css dialog  Start---------*/
+
+.ui-dialog {
+    padding: 0;
+    width: 300px !important;
+    z-index: 10000;
+}
+
+.ui-dialog .ui-dialog-titlebar { display: none; }
+
+.ui-dialog .ui-dialog-content { min-height: 0 !important; }
+
+.ui-dialog p {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    border: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { width: 100% !important; }
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button {
+    border-radius: 0;
+    margin: 0 !important;
+    width: 50% !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover {
+    background: #C75F3F !important;
+    color: #fff;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #fff;
+    border: 0;
+    font-size: 16px;
+    height: 36px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-title {
+    color: #1F3246 !important;
+    width: 100%;
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    border: 0;
+    padding: 8px 0 16px;
+    text-align: center;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: inherit; }
+
+.ui-dialog .ui-dialog-buttonpane button {
+    background-color: #1F3246;
+    color: #fff;
+    margin: 1.5em 2.5em;
+    outline: none;
+    padding: 8px 30px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+    background: url(../Content/Images/close.png) no-repeat center center;
+    border: none;
+    height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    right: 12px;
+    top: 10px;
+    width: 20px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close span { display: none; }
+
+.ui-dialog .ui-dialog-titlebar {
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    height: 40px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.left-dialog { padding: 12px; }
+
+.left-dialog .ui-dialog-title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.info-title .ui-dialog-title {
+    line-height: 30px;
+    padding: 30px 30px 20px;
+    white-space: normal;
+}
+
+.info-title .ui-dialog-content { padding: 0; }
+
+.create-title .ui-dialog-title { line-height: 50px; }
+
+/*------- css dialog  End---------*/
+
+/*------- css select  Start---------*/
+
+.select_lable { position: relative; }
+
+.select_lable > i {
+    background: url(../Images/icon_down_arrow.png) no-repeat center center;
+    background-size: 60%;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: 1px;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+}
+
+.select_lable .select_text {
+    border: 1px solid #858b91;
+    border-radius: 2px;
+    height: 32px;
+    line-height: 32px;
+    outline: none;
+    padding: 0 24px 0 6px;
+    width: 100%;
+}
+
+.select_lable .select_text:focus { border-color: #008cff; }
+
+.select_list {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 0 2px 0 #858b91;
+    display: none;
+    max-height: 300px;
+    min-width: 100%;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+    z-index: 50;
+}
+
+.select_list li {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    display: block;
+    line-height: 24px;
+    margin: 5px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+.select_list .on,
+.select_list li:hover { color: #43B159; }
+
+/*------- css select  End---------*/
+
+/*------- css radio,checkbox  Start---------*/
+
+label.radio, label.cbox {
+    cursor: pointer;
+    display: inline-block;
+    line-height: 40px;
+}
+
+label.radio > input, label.cbox > input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+label.radio > input + i {
+    background-color: #E9EAEA;
+    border: 6px solid #E9EAEA;
+    border-radius: 50%;
+    color: transparent;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    margin-bottom: -4px;
+    margin-right: 12px;
+    width: 18px;
+}
+
+label.cbox > input + i {
+    background-color: #E9EAEA;
+    border: 1px solid #E9EAEA;
+    border-radius: 3px;
+    color: transparent;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    margin-bottom: -4px;
+    margin-right: 12px;
+    width: 18px;
+}
+
+label.radio > input:checked + i {
+    background-color: #fff;
+    border-color: #5abd69;
+}
+
+label.cbox > input:checked + i {
+    background: #E9EAEA url(../Images/check.png) no-repeat center center;
+    background-size: 10px;
+}
+
+/*------- css radio,checkbox  End---------*/
+
+.width_100 { width: 100% !important; }
+
+.width_90 { width: 90% !important; }
+
+.width_80 { width: 80% !important; }
+
+.width_70 { width: 70% !important; }
+
+.width_60 { width: 60% !important; }
+
+.width_50 { width: 50% !important; }
+
+.width_40 { width: 40% !important; }
+
+.width_30 { width: 30% !important; }
+
+.width_20 { width: 20% !important; }
+
+.width_10 { width: 100% !important; }
+
+.m_left { float: left; }
+
+.m_right { float: right; }
+
+.m_t_left { text-align: left; }
+
+.m_t_right { text-align: right; }
+
+.m_btn {
+    background-color: #244E76;
+    border: 1px solid #244E76;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.m_back {
+    background-color: #fff;
+    border-color: #C75F3F;
+    color: #C75F3F;
+    margin: 30px;
+    width: 180px;
+}
+
+.m_btn:hover {
+    background-color: #C65B3B;
+    border-color: #C65B3B;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.m_title_box {
+    background-color: #fff;
+    display: inline-block;
+    margin: 4px 0 5px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.m_title_box ol {
+    float: left;
+    line-height: 44px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.m_title_box ol li {
+    color: #244E76;
+    float: left;
+    line-height: 44px;
+}
+
+.m_title_box ol li a {
+    color: #244E76;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.m_title_box ol li a:hover { color: #F09B22; }
+
+.m_title_box ol li:last-child { color: #777; }
+
+.m_title_box ol li i {
+    color: #ccc;
+    font-size: 16px;
+    margin: 0 15px;
+}
+
+.m_title_box .m_title_action {
+    float: right;
+    margin-top: 6px;
+}
+
+.m_title_box .m_btn { border-radius: 15px; }
+
+.form-group {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-group .from-title {
+    line-height: 34px;
+    text-align: right;
+}
+
+.form-group .from-cont { line-height: 34px; }
+
+.search-container { margin-bottom: 10px; }
+
+.search-container input { display: inline-block; }
+
+.search-container input[type="text"] {
+    margin: 0 6px 0 0;
+    width: 200px;
+}
+
+.search-container input[type="submit"], .search-container input[type="submit"]:hover {
+    background-color: #eee;
+    border-color: #DDDDDD;
+    color: #244E76;
+    font-weight: bold;
+    width: 80px;
+}
+
+.search-container input[type="submit"]:hover {
+    border-color: #244E76;
+    font-weight: bold;
+}

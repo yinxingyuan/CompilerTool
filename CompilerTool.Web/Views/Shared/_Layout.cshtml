@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>@ViewBag.Title</title>
+	@Styles.Render("~/Content/css")
+	@Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/jqueryui")
+	@Scripts.Render("~/bundles/jqueryval")
+	@Scripts.Render("~/bundles/modernizr")
+	<link href="@(this.Url.Content("~/Content/bootstrap.min.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Scripts/jquery-ui-1.12.1/jquery-ui.min.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Scripts/DateTimePicker/jquery.datetimepicker.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Content/fonts-styles.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Content/styles.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Content/common.css"))" rel="stylesheet" />
+	<link href="@(this.Url.Content("~/Content/custom-style.css"))" rel="stylesheet" />
+
+	<script src='@this.Url.Content("~/Scripts/bootstrap.min.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/jquery-ui-1.12.1/jquery-ui.min.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/DateTimePicker/jquery.datetimepicker.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/dateFormat.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/PagerForHtmlHelper.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/scripts.js")'> </script>
+	<script src='@this.Url.Content("~/Scripts/common.js")'> </script>
+	@RenderSection("Links", false)
+
+	<script>
+	    $(function () {
+	        metaShare.basic.prototype.clickLight();
+		        changeSize();
+		        $(window)
+		            .resize(function() {
+		                changeSize();
+		            });
+		        function changeSize() {
+		            var height = $("#nav").height();
+	                if (document.body.clientWidth < 768) {
+	                    $("#main-menu").css('margin-top', height - 17);
+	                } else {
+	                    $("#main-menu").css('margin-top', 0);
+	                }
+	            }
+	        //metaShare.basic.prototype.footerPosition();
+	        //$(window).resize(metaShare.basic.prototype.footerPosition);
+	    });
+	</script>
+
+</head>
+<body>
+<div id="wrapper" class="m_deepblue">
+    <nav class="navbar navbar-default top-navbar" role="navigation" >
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="@(this.Url.Action("Index", new { Controller="OrderItem",area=""}))">
+                <img src="~/Content/Images/logo.png" class="m_left" />&nbsp;
+                <span>CompilerTool</span>
+            </a>
+            <div id="sideNav">
+                <i class="icon-right-arrow"></i>
+            </div>
+        </div>
+
+               <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                @if (this.Context.User.Identity.IsAuthenticated)
+                {
+                    
+                    <a href="##" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Hi,@this.Context.User.Identity.Name <i class="icon-down-arrow"></i></a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a><i></i> User Profile</a></li>
+                        <li><a><i></i> Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="@(this.Url.Action("Logout", "Account",new {redirectUrl = Request.Url}))"><i></i> LOG OUT</a></li>
+                    </ul>
+                }
+                else
+                {
+                    <a href="@(this.Url.Action("Login", "Account",new {redirectUrl = Request.Url}))" class="dropdown-toggle">LOG IN</a>
+                }
+                </li>
+            </ul>
+    </nav>
+    <nav class="navbar-default navbar-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav" id="main-menu" style="margin-bottom: 20px;">
+	                <li data-id="OrderItem">@Html.ActionLink("OrderItem", "Index", new { Controller="OrderItem",area=""})</li>
+            </ul>
+        </div>
+    </nav>
+    <div id="page-wrapper">
+        <div id="page-inner" style="margin:0;">
+            @RenderBody()
+            @RenderSection("scripts", required: false)
+            <footer>
+                <p></p>
+            </footer>
+       </div>
+    </div>
+</div>
+</body>
+</html>
+
+

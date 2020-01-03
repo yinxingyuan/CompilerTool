@@ -1,0 +1,43 @@
+@using MetaShare.Common.Core.Presentation
+@using CompilerTool.Entities
+@using CompilerTool.Web.HtmlExtensions
+@using CompilerTool.Web.Models
+
+@model IndexViewModel<OrderItem>
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+            <tr>
+		<th class="text-left">Name</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @if (Model.TargetPager != null && Model.TargetPager.Datas != null)
+            {
+            foreach (CompilerTool.Entities.OrderItem orderItemItem in Model.TargetPager.Datas)
+                        {
+                <tr>
+			<td  class="text-left">
+				@Html.DisplayFor(modelItem => orderItemItem.Name)
+			</td>
+                    <td>
+                        @Html.ActionLink(" ", "Details", new { id = orderItemItem.Id, Controller = "OrderItem", area = ""}, new {@class="m_details", title="Details" })
+                        @Html.ActionLink(" ", "Edit", new { id = orderItemItem.Id, Controller = "OrderItem", area = ""}, new {@class="m_edit", title="Edit" })
+                        @Html.ActionLink(" ", "#", "#", new {href = "javascript:void(0);",@class="m_delete", title="Delete", onclick = " javascript:metaShare.basic.prototype.deleteTableColumn(this,'" + orderItemItem.Id + "','" + Url.Action("Delete",new {Controller = "OrderItem", area = ""}) + "'); return false; "})
+                    </td>
+                </tr>
+            }
+            }
+            </tbody>
+        </table>
+
+
+        <div class="UserPagerDiv text-center">
+    @{
+        object conditions = new
+        {
+            Name = Model.SearchModel != null ? Model.SearchModel.Name : "",
+        };
+    }
+        @Ajax.AjaxRenderPager(Model.TargetPager, "Search", "OrderItem","OrderItem_DataList", conditions)
+        </div>

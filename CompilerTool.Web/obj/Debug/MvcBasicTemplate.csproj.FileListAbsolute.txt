@@ -1,0 +1,64 @@
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.dll.config
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.pdb
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\Antlr3.Runtime.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\EntityFramework.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\Microsoft.Web.Infrastructure.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\Newtonsoft.Json.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Net.Http.Formatting.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.WebHost.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Mvc.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Optimization.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Providers.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Razor.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Deployment.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Razor.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\WebGrease.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\EntityFramework.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\Newtonsoft.Json.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Net.Http.Formatting.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.WebHost.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Mvc.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Razor.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Deployment.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Razor.xml
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.csprojResolveAssemblyReference.cache
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.dll
+E:\MDA Else Projects\MVCTemplateApp\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.pdb
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.dll.config
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\MvcBasicTemplate.pdb
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\Antlr3.Runtime.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\EntityFramework.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\Newtonsoft.Json.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Net.Http.Formatting.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.WebHost.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Mvc.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Optimization.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Providers.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Razor.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Deployment.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Razor.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\WebGrease.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\EntityFramework.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\Newtonsoft.Json.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Net.Http.Formatting.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Http.WebHost.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Mvc.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.Razor.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Deployment.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\bin\System.Web.WebPages.Razor.xml
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.csprojResolveAssemblyReference.cache
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.dll
+C:\Users\zhao.baohong\Desktop\MvcBasicTemplate\MvcBasicTemplate\obj\Debug\MvcBasicTemplate.pdb
